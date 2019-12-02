@@ -15,6 +15,11 @@
 		93845EA12395AD4500B38645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93845E9F2395AD4500B38645 /* LaunchScreen.storyboard */; };
 		93845EAC2395AD4500B38645 /* Nike_RSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845EAB2395AD4500B38645 /* Nike_RSSTests.swift */; };
 		93845EB72395AD4500B38645 /* Nike_RSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845EB62395AD4500B38645 /* Nike_RSSUITests.swift */; };
+		93845EC82395B36C00B38645 /* RssFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845EC72395B36C00B38645 /* RssFeed.swift */; };
+		93845EC92395B36C00B38645 /* RssFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845EC72395B36C00B38645 /* RssFeed.swift */; };
+		93845ECC2395BE7800B38645 /* FeedDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845ECB2395BE7800B38645 /* FeedDecoder.swift */; };
+		93845ECD2395BE7800B38645 /* FeedDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845ECB2395BE7800B38645 /* FeedDecoder.swift */; };
+		93845ECF2395C08800B38645 /* RssJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845ECE2395C08800B38645 /* RssJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,9 @@
 		93845EB22395AD4500B38645 /* Nike RSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nike RSSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93845EB62395AD4500B38645 /* Nike_RSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nike_RSSUITests.swift; sourceTree = "<group>"; };
 		93845EB82395AD4500B38645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93845EC72395B36C00B38645 /* RssFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssFeed.swift; sourceTree = "<group>"; };
+		93845ECB2395BE7800B38645 /* FeedDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDecoder.swift; sourceTree = "<group>"; };
+		93845ECE2395C08800B38645 /* RssJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		93845E932395AD4400B38645 /* Nike RSS */ = {
 			isa = PBXGroup;
 			children = (
+				93845ECA2395BE6600B38645 /* Controller */,
+				93845EC42395AE0900B38645 /* Model */,
 				93845E942395AD4400B38645 /* AppDelegate.swift */,
 				93845E962395AD4400B38645 /* SceneDelegate.swift */,
 				93845E982395AD4400B38645 /* ViewController.swift */,
@@ -115,6 +125,7 @@
 			children = (
 				93845EAB2395AD4500B38645 /* Nike_RSSTests.swift */,
 				93845EAD2395AD4500B38645 /* Info.plist */,
+				93845ECE2395C08800B38645 /* RssJson.swift */,
 			);
 			path = "Nike RSSTests";
 			sourceTree = "<group>";
@@ -126,6 +137,22 @@
 				93845EB82395AD4500B38645 /* Info.plist */,
 			);
 			path = "Nike RSSUITests";
+			sourceTree = "<group>";
+		};
+		93845EC42395AE0900B38645 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93845EC72395B36C00B38645 /* RssFeed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93845ECA2395BE6600B38645 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93845ECB2395BE7800B38645 /* FeedDecoder.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93845ECC2395BE7800B38645 /* FeedDecoder.swift in Sources */,
+				93845EC82395B36C00B38645 /* RssFeed.swift in Sources */,
 				93845E992395AD4400B38645 /* ViewController.swift in Sources */,
 				93845E952395AD4400B38645 /* AppDelegate.swift in Sources */,
 				93845E972395AD4400B38645 /* SceneDelegate.swift in Sources */,
@@ -269,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93845EC92395B36C00B38645 /* RssFeed.swift in Sources */,
 				93845EAC2395AD4500B38645 /* Nike_RSSTests.swift in Sources */,
+				93845ECF2395C08800B38645 /* RssJson.swift in Sources */,
+				93845ECD2395BE7800B38645 /* FeedDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
