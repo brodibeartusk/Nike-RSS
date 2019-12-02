@@ -11,6 +11,7 @@ import Foundation
 /// Utility class to decode an RssFeed from a Data object
 class FeedDecoder {
     
+    /// Decodes an RssFeed object from the Apple RSS feed
     static func decodeFeed(data: Data) -> RssFeed? {
         
         let decoder = JSONDecoder()
