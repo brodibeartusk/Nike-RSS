@@ -23,6 +23,7 @@ class AlbumViewController: UIViewController {
     /// open artist url in iTunes
     @IBAction func viewInItunes(_ sender: Any) {
         if let artistURL = result?.artistUrl {
+            NSLog("Opening artist URL: \(artistURL)")
             if let musicURL = URL(string: artistURL) {
                 if UIApplication.shared.canOpenURL(musicURL) {
                     UIApplication.shared.open(musicURL, options: [:])
