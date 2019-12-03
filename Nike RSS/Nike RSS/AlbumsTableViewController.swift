@@ -46,7 +46,10 @@ class AlbumsTableViewController: UITableViewController {
 
         if let results = FeedManager.shared.rssFeed?.feed.results {
             cell.albumName.text = results[indexPath.row].name
+            cell.albumName.lineBreakMode = NSLineBreakMode.byWordWrapping
+            cell.albumName.numberOfLines = 0
             cell.artist.text = results[indexPath.row].artistName
+            cell.artist.lineBreakMode = NSLineBreakMode.byWordWrapping
             
             if let imageUrl = URL(string: results[indexPath.row].artworkUrl100) {
                 cell.albumArt.load(url: imageUrl)
