@@ -21,10 +21,10 @@ class FeedManager {
     }
     
     /// Loads an RssFeed from the Apple RSS feed url and captures the result as rssFeed
-    func loadFeed() {
+    func loadFeed(completion: @escaping () -> Void) {
         
-        rssFeed = FeedDecoder.decodeFeed(data: Data(mockJson.utf8))
-        /*
+        //rssFeed = FeedDecoder.decodeFeed(data: Data(mockJson.utf8))
+        
         if let url = URL(string: feedUrlString) {
             URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
                 
@@ -40,6 +40,8 @@ class FeedManager {
                             if let self = self {
                                 self.rssFeed = FeedDecoder.decodeFeed(data: feedData)
                                 NSLog("Feed successfully loaded")
+                                
+                                completion()
                             }
                         }
                     }
@@ -54,6 +56,6 @@ class FeedManager {
             }.resume()
  
         }
- */
+ 
     }
 }
