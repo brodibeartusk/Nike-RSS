@@ -92,8 +92,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wfw-bw-3JN" userLabel="Album Art">
-                                <rect key="frame" x="123" y="120" width="150" height="150"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wfw-bw-3JN" userLabel="Album Art">
+                                <rect key="frame" x="123" y="120" width="168" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="qX9-gz-HuW"/>
                                 </constraints>
@@ -143,6 +143,9 @@
                                 <state key="normal" title="View in iTunes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="viewInItunes:" destination="WDc-UO-WKP" eventType="touchUpInside" id="MHg-3I-O6c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

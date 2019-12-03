@@ -17,6 +17,16 @@ class AlbumViewController: UIViewController {
     @IBOutlet weak var copyright: UILabel!
     @IBOutlet weak var albumArt: UIImageView!
     
+    @IBAction func viewInItunes(_ sender: Any) {
+        if let artistURL = result?.artistUrl {
+            if let musicURL = URL(string: artistURL) {
+                if UIApplication.shared.canOpenURL(musicURL) {
+                    UIApplication.shared.open(musicURL, options: [:])
+                }
+            }
+        }
+       
+    }
     var result: Result?
     
     func setAlbumDetail(result: Result) {
