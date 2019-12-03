@@ -44,14 +44,15 @@ class AlbumsTableViewController: UITableViewController {
             fatalError("albumCell was not an instance of AlbumTableViewCell")
         }
 
-        if let results = FeedManager.shared.rssFeed?.feed.results {
-            cell.albumName.text = results[indexPath.row].name
+        if let result = FeedManager.shared.rssFeed?.feed.results[indexPath.row] {
+            
+            cell.albumName.text = result.name
             cell.albumName.lineBreakMode = NSLineBreakMode.byWordWrapping
             cell.albumName.numberOfLines = 0
-            cell.artist.text = results[indexPath.row].artistName
+            cell.artist.text = result.artistName
             cell.artist.lineBreakMode = NSLineBreakMode.byWordWrapping
             
-            if let imageUrl = URL(string: results[indexPath.row].artworkUrl100) {
+            if let imageUrl = URL(string: result.artworkUrl100) {
                 cell.albumArt.load(url: imageUrl)
             }
         }
