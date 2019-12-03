@@ -98,14 +98,37 @@ class AlbumsTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        super.prepare(for: segue, sender: sender)
+        
+        switch(segue.identifier ?? "") {
+            
+        case "AlbumDetail":
+            guard let detailController = segue.destination as? AlbumViewController else {
+                fatalError("Unexpected destination \(String(describing: segue.destination))")
+            }
+            
+            guard let selectedAlbumCell = sender as? AlbumTableViewCell else {
+                fatalError("Unexpected sender \(String(describing: sender))")
+            }
+            
+            guard let indexPath = tableView.indexPath(for: selectedAlbumCell) else {
+                fatalError("Not a selected cell \(selectedAlbumCell)")
+            }
+            
+            if let result = FeedManager.shared.rssFeed?.feed.results[indexPath.row] {
+                detailController.setAlbumDetail(result: result)
+            }
+            
+        default:
+            fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            
+        }
     }
-    */
+
 
 }

@@ -42,6 +42,7 @@ struct Result: Codable {
     var artistId: String
     var artistUrl: String
     var artworkUrl100: String
+    var genres: [Genre]
 }
 
 /// the genre for a Feed Result
