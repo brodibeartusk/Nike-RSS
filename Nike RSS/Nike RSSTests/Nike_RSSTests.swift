@@ -26,6 +26,25 @@ class Nike_RSSTests: XCTestCase {
         let rssFeed = FeedDecoder.decodeFeed(data: feedJsonData)
         
         XCTAssertNotNil(rssFeed, "rssFeed failed to decode")
+        
+        let feed = rssFeed?.feed
+        
+        XCTAssertNotNil(feed, "feed not found in decoded json")
+        
+        if let results = feed?.results {
+            for result in results {
+                XCTAssertNotNil(result.artistName, "artist name not found in result")
+                XCTAssertNotNil(result.artistUrl, "artist Url not found in result")
+                XCTAssertNotNil(result.copyright, "copyright not found in result")
+                XCTAssertNotNil(result.artworkUrl100, "artwork rul Url not found in result")
+                XCTAssertNotNil(result.genres, "genres not found in result")
+                XCTAssertNotNil(result.releaseDate, "release date not found in result")
+            }
+        }
+        
+        
+        
+        
     }
 
     
