@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RssFeedViewController.swift
 //  Nike RSS
 //
 //  Created by Brodi Beartusk on 12/2/19.
@@ -8,12 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
+    @IBOutlet weak var albums: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
+    
+    
+    
+    
 
 
 }
