@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9310ADAF2395EE6D0087A07B /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310ADAE2395EE6D0087A07B /* AlbumTableViewCell.swift */; };
-		9310ADB12395F2FF0087A07B /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310ADB02395F2FF0087A07B /* AlbumsTableViewController.swift */; };
-		9310ADB32395F6B60087A07B /* mockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310ADB22395F6B60087A07B /* mockData.swift */; };
 		9310ADB62395FF110087A07B /* UIImageView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310ADB52395FF110087A07B /* UIImageView+Load.swift */; };
 		9310ADB823962ABC0087A07B /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310ADB723962ABC0087A07B /* AlbumViewController.swift */; };
+		9310ADBD239652870087A07B /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310ADBB239652870087A07B /* AlbumsTableViewController.swift */; };
+		9310ADBE239652870087A07B /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310ADBC239652870087A07B /* AlbumTableViewCell.swift */; };
 		93845E952395AD4400B38645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845E942395AD4400B38645 /* AppDelegate.swift */; };
 		93845E972395AD4400B38645 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845E962395AD4400B38645 /* SceneDelegate.swift */; };
-		93845E992395AD4400B38645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93845E982395AD4400B38645 /* ViewController.swift */; };
 		93845E9C2395AD4400B38645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93845E9A2395AD4400B38645 /* Main.storyboard */; };
 		93845E9E2395AD4500B38645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93845E9D2395AD4500B38645 /* Assets.xcassets */; };
 		93845EA12395AD4500B38645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93845E9F2395AD4500B38645 /* LaunchScreen.storyboard */; };
@@ -46,15 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9310ADAE2395EE6D0087A07B /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
-		9310ADB02395F2FF0087A07B /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
-		9310ADB22395F6B60087A07B /* mockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockData.swift; sourceTree = "<group>"; };
 		9310ADB52395FF110087A07B /* UIImageView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Load.swift"; sourceTree = "<group>"; };
 		9310ADB723962ABC0087A07B /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		9310ADBB239652870087A07B /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
+		9310ADBC239652870087A07B /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		93845E912395AD4400B38645 /* Nike RSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nike RSS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93845E942395AD4400B38645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93845E962395AD4400B38645 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93845E982395AD4400B38645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93845E9B2395AD4400B38645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93845E9D2395AD4500B38645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93845EA02395AD4500B38645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +95,8 @@
 		9310ADB42395FEF60087A07B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9310ADBB239652870087A07B /* AlbumsTableViewController.swift */,
+				9310ADBC239652870087A07B /* AlbumTableViewCell.swift */,
 				9310ADB52395FF110087A07B /* UIImageView+Load.swift */,
 				9310ADB723962ABC0087A07B /* AlbumViewController.swift */,
 			);
@@ -133,14 +131,10 @@
 				93845EC42395AE0900B38645 /* Model */,
 				93845E942395AD4400B38645 /* AppDelegate.swift */,
 				93845E962395AD4400B38645 /* SceneDelegate.swift */,
-				93845E982395AD4400B38645 /* ViewController.swift */,
 				93845E9A2395AD4400B38645 /* Main.storyboard */,
 				93845E9D2395AD4500B38645 /* Assets.xcassets */,
 				93845E9F2395AD4500B38645 /* LaunchScreen.storyboard */,
 				93845EA22395AD4500B38645 /* Info.plist */,
-				9310ADAE2395EE6D0087A07B /* AlbumTableViewCell.swift */,
-				9310ADB02395F2FF0087A07B /* AlbumsTableViewController.swift */,
-				9310ADB22395F6B60087A07B /* mockData.swift */,
 			);
 			path = "Nike RSS";
 			sourceTree = "<group>";
@@ -315,12 +309,10 @@
 				93845ECC2395BE7800B38645 /* FeedDecoder.swift in Sources */,
 				93845EC82395B36C00B38645 /* RssFeed.swift in Sources */,
 				9310ADB62395FF110087A07B /* UIImageView+Load.swift in Sources */,
-				93845E992395AD4400B38645 /* ViewController.swift in Sources */,
-				9310ADB32395F6B60087A07B /* mockData.swift in Sources */,
 				93845ED12395CE5F00B38645 /* FeedManager.swift in Sources */,
-				9310ADAF2395EE6D0087A07B /* AlbumTableViewCell.swift in Sources */,
-				9310ADB12395F2FF0087A07B /* AlbumsTableViewController.swift in Sources */,
 				93845E952395AD4400B38645 /* AppDelegate.swift in Sources */,
+				9310ADBE239652870087A07B /* AlbumTableViewCell.swift in Sources */,
+				9310ADBD239652870087A07B /* AlbumsTableViewController.swift in Sources */,
 				93845E972395AD4400B38645 /* SceneDelegate.swift in Sources */,
 				9310ADB823962ABC0087A07B /* AlbumViewController.swift in Sources */,
 			);
